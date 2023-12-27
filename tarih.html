@@ -1,0 +1,1230 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarih Soruları</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        body {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 50px
+        }
+
+        .box {
+            width: 100%;
+            min-height: 50vh;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: 50px
+        }
+
+        .container {
+            width: 350px;
+            height: 350px;
+            font-size: 20px;
+            box-shadow: 0 0 500px #555;
+            border-radius: 25px;
+            overflow: hidden;
+            transition: 250ms
+        }
+
+        .container .soru {
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            text-align: justify;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 10px 0 250px #555;
+            transition: 250ms
+        }
+
+        .container .cevap {
+            width: 100%;
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            transition: 250ms
+        }
+
+        .container:hover .soru {
+            height: 75%
+        }
+
+        .container:hover .cevap {
+            height: 25%
+        }
+
+        a {
+            text-decoration: none;
+            width: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px 25px;
+            border: 1px solid #333;
+            color: #333;
+            border-radius: 5px;
+            transition: 250ms
+        }
+
+        a:hover {
+            color: #fff;
+            background: #333
+        }
+
+        select {
+            width: 350px;
+            height: 50px;
+            font-size: 24px;
+            border-radius: 10px 10px 0 0;
+            padding: 10px 25px;
+            outline: none;
+            border: none;
+            box-shadow: 5px 5px 25px #555 inset, 5px 5px 25px #555
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <select name="" id="konu">
+        <option value="0">İslamiyet Öncesi Türk Devletleri</option>
+        <option value="1">İlk Türk-İslam Devletleri</option>
+    </select>
+    <div class="box">
+
+        <div class="container">
+            <div class="soru"></div>
+            <b><i>
+                    <div class="cevap"></div>
+                </i></b>
+        </div>
+
+    </div>
+
+    <a href="#" onclick="degistir()">Değiştir</a>
+    <script>
+        var unite1 = [{
+                unite: "İslamiyet Öncesi Türk Devletleri",
+                soru: "Eski Türk isimlerinden Wambery",
+                cevap: "Türemek"
+            },
+            {
+                soru: "Eski Türk isimlerinden Doerfer",
+                cevap: "Devlete Bağlı Halk"
+            },
+            {
+                soru: "Eski Türk isimlerinden Kaşgarlı Mahmut",
+                cevap: "Olgunluk Çağı"
+            },
+            {
+                soru: "Eski Türk isimlerinden İran Kaynakları",
+                cevap: "Güzel İnsan"
+            },
+            {
+                soru: "Eski Türk isimlerinden Çin Kaynakları",
+                cevap: "Miğfer"
+            },
+            {
+                soru: "Eski Türk isimlerinden Ziya Gökalp",
+                cevap: "Kanun ve Nizam Sahibi"
+            },
+            {
+                soru: "Orta Asya'nın en eski kültür merkezi",
+                cevap: "Anav"
+            },
+            {
+                soru: "Orta Asya'nın en eski Türk kültür merkezi",
+                cevap: "Afanesyova"
+            },
+            {
+                soru: "Orta Asya'nın en gelişmiş kültür merkezi",
+                cevap: "Tagar"
+            },
+            {
+                soru: "Türklerin atalarının yaşadığı kültür merkezi",
+                cevap: "Andronova"
+            },
+            {
+                soru: "Orta Asya'da ilk demirin işlendiği kültür merkezi",
+                cevap: "Karasuk"
+            },
+            {
+                soru: "Orta Asya'da yerleşik yaşamın görüldüğü kültür merkezi",
+                cevap: "Kelteminar"
+            },
+            {
+                soru: "Türk adının ilk defa geçtiği yer",
+                cevap: "Çin"
+            },
+            {
+                soru: "Türkiye adının ilk defa geçtiği yer",
+                cevap: "Bizans"
+            },
+            {
+                soru: "... nedenleri<br><br>Kuraklık, fırtına, kıtlık<br>Çin ve Moğol baskısı (Diş neden)<br>Yeni yerler görme isteği<br>Türk cihan hakimiyeti mefkuresi<br>Boylar arası mücadele ve hayvan hastalıkları<br>Hızlı nüfus artışı ve kaynakları tükenmesi",
+                cevap: "Türk Göçlerinin Nedenleri"
+            },
+            {
+                soru: "... sonuçları<br><br>Türk Kültürü geniş alana yayıldı<br>Türklerin dil ve din yapısı değişti<br>Türk Tarihi'nin bir bütün içinde incelenmesi zorlaştı<br>Yeni Türk Devletleri kuruldu",
+                cevap: "Türk Göçlerinin Sonuçları"
+            },
+            {
+                soru: "İskitlerin diğer adı",
+                cevap: "Sakalar"
+            },
+            {
+                soru: "İskitlerin en önemli hükümdarı",
+                cevap: "Alper Tunga"
+            },
+            {
+                soru: "İskitlerin en önemli kadın hükümdarı",
+                cevap: "Tomris Hatun"
+            },
+            {
+                soru: "İskitlerin en önemli kadın savaşçıları",
+                cevap: "Amazon"
+            },
+            {
+                soru: "İlk kez atı evcilleştirip savaş aracı olarak kullananlar",
+                cevap: "İskitler"
+            },
+            {
+                soru: "İskitlerin maden işlemeciliğinde ustalaştıkları için aldıkları ünvan",
+                cevap: "Bozkırın Kuyumcuları"
+            },
+            {
+                soru: "İlk defa balbal dikenler",
+                cevap: "İskitler"
+            },
+            {
+                soru: "İlk defa hayvan üslubu kullananlar",
+                cevap: "İskitler"
+            },
+            {
+                soru: "Bilinen ilk türk devleti",
+                cevap: "Asya Hun Devleti"
+            },
+            {
+                soru: "Asya Hun Devleti'nin kurucusu",
+                cevap: "Teoman"
+            },
+            {
+                soru: "Asya Hun Devleti'nin merkezi",
+                cevap: "Ötüken"
+            },
+            {
+                soru: "Asya Hun Devleti'nin en önemli hükümdarı",
+                cevap: "Metehan"
+            },
+            {
+                soru: "Toprak Ana ve Kutsal Bölge olarak anılan yer",
+                cevap: "Ötüken"
+            },
+            {
+                soru: "26 Türk boyunu bir bayrak altında toplayarak siyasi birliği sağlayan",
+                cevap: "Metehan"
+            },
+            {
+                soru: "Tunguzlara toprak vermeyerek ilk defa Vatan Sevgisi'nden bahseden",
+                cevap: "Metehan"
+            },
+            {
+                soru: "Onlu sistemi bularak ilk defa düzenli orduyu sağlayan",
+                cevap: "Metehan"
+            },
+            {
+                soru: "İlk Türk-Çin Antlaşması",
+                cevap: "Kuzey Şansi Antlaşması"
+            },
+            {
+                soru: "İstiklali fedayı gülünç ve utanç verici bulurum diyen",
+                cevap: "Çiçi"
+            },
+            {
+                soru: "... sonuçları<br><br>Roma İmparatorluğu Doğu ve Batı olarak ikiye ayrıldı<br>Avrupa Hun Devleti kuruldu<br>Feodalite (derebeylik) ortaya çıktı<br>Skolastik düşünce ortaya çıktı<br>Avrupa'nın bugünkü devletleri ortaya çıktı<br>Hristiyanlık Avrupalı milletler arasında yayıldı<br>Orta Çağ başladı<br>Avrupalılar Türk kültürünü tanıdı",
+                cevap: "Kavimler Göçü Sonuçları"
+            },
+            {
+                soru: "Avrupa Hun Devleti'nin kurucusu",
+                cevap: "Balamir"
+            },
+            {
+                soru: "Avrupa Hun Devleti'nde Anadolu'ya ilk defa ayak basılan zaman",
+                cevap: "Uldız"
+            },
+            {
+                soru: "Avrupa Hun Devleti'nde 'İstesem güneşin battığı yere kadar her yeri zapt ederim.' diyen kişi",
+                cevap: "Uldız"
+            },
+            {
+                soru: "Avrupa Hun Devleti'nin en parlak dönemi",
+                cevap: "Attila"
+            },
+            {
+                soru: "Margus Barışı ve Anatolyus Antlaşması ile vergiye bağlanan devlet",
+                cevap: "Roma"
+            },
+            {
+                soru: "Attila'ya Hristiyanlar tarafından verilen ünvan",
+                cevap: "Tanrının Kırbacı - Cesur Kavimlerin Efendisi"
+            },
+            {
+                soru: "Attila'nın Nibelüngen'deki ismi",
+                cevap: "Etzel"
+            },
+            {
+                soru: "... nedenleri<br><br>Papa I. Leo'nun ricası<br>Roma'nın Hristiyanlarca kutsal olması<br>Attila'nın Batı Roma'nın gücünü kırdığına inanması<br>Attila'nın Sasanil Devleti üzerine bir sefere çıkmak istemesi",
+                cevap: "Avrupoa Hun Devleti'nin Roma'yı Almama Nedenleri"
+            },
+            {
+                soru: "Avarlar'ın kurucusu",
+                cevap: "Bayan Han"
+            },
+            {
+                soru: "Çinlilerin ve Göktürklerin Avarlara sırasıyla verdikleri isim",
+                cevap: "Juan-Juan - Apar"
+            },
+            {
+                soru: "Sasaniler ile İstanbul'u iki defa kuşatan devlet",
+                cevap: "Avarlar"
+            },
+            {
+                soru: "İstanbul'u kuşatan ilk Türk devlet",
+                cevap: "Avarlar"
+            },
+            {
+                soru: "Hunlarla birlikte üzengiyi Avrupaya taşıyan devlet",
+                cevap: "Avarlar"
+            },
+            {
+                soru: "Germenleri ve Slavları yönetim ve askerlik alanında etkileyen devlet",
+                cevap: "Avarlar"
+            },
+            {
+                soru: "Franklar sonucu yıkılan devlet",
+                cevap: "Avarlar"
+            },
+            {
+                soru: "Bizans ordusunda ücretli askerlik yapan devlet ve boy",
+                cevap: "Uzlar - Peçenekler"
+            },
+            {
+                soru: "Malazgirt Savaşı'nda taraf değiştiren devlet ve boy",
+                cevap: "Uzlar - Peçenekler"
+            },
+            {
+                soru: "Malazgirt Savaşı'nda taraf değiştirerek Selçuklular ile birleşip savaşı kazanan boy",
+                cevap: "Peçenekler"
+            },
+            {
+                soru: "Macarların lideri",
+                cevap: "Arpad"
+            },
+            {
+                soru: "Türkoloji Enstitüsünü kuran",
+                cevap: "Macarlar"
+            },
+            {
+                soru: "Türk Kurultayı düzenleyen",
+                cevap: "Macarlar"
+            },
+            {
+                soru: "Bulgarların lideri",
+                cevap: "Kubrat Han"
+            },
+            {
+                soru: "Tuna Bulgarları'nda Hristiyanlığı kabul eden hükümdar",
+                cevap: "Boris Han"
+            },
+            {
+                soru: "Çar ünvanını ilk defa kullanan",
+                cevap: "Simon"
+            },
+            {
+                soru: "İtil Bulgarları'nda İslamiyeti kabul eden hükümdar",
+                cevap: "Almış Han"
+            },
+            {
+                soru: "İbni Fadlan'ın eseri",
+                cevap: "Rihle"
+            },
+            {
+                soru: "Rihle'yi yazan",
+                cevap: "İbni Fadlan"
+            },
+            {
+                soru: "İbni Fadlan'ın Rihle eserinde geçen devlet",
+                cevap: "İtil Bulgarları"
+            },
+            {
+                soru: "Museviliği kabul eden ilk ve tek Türk devlet",
+                cevap: "Hazarlar"
+            },
+            {
+                soru: "Kürk Yolu'nu kullanarak zenginleşen devlet",
+                cevap: "Hazarlar"
+            },
+            {
+                soru: "Emeviler ile mücadele ederek Maveraünnehir'in islamlaşmasını bir süreliğine engelleyen devlet",
+                cevap: "Hazarlar"
+            },
+            {
+                soru: "İlk defa ücretli askerlik alan devlet",
+                cevap: "Hazarlar"
+            },
+            {
+                soru: "Yoldan sapan manasına gelir",
+                cevap: "Sibirler"
+            },
+            {
+                soru: "Kıpçaklar'ın diğer adı",
+                cevap: "Kumanlar"
+            },
+            {
+                soru: "Kelime anlamı sarı, sarımtrak, sarı saçlı, öfkeli",
+                cevap: "Kıpçaklar"
+            },
+            {
+                soru: "Karadeniz'in kuzeyinde yaşamış islamiyetten önceki Türk devleti",
+                cevap: "Kıpçaklar"
+            },
+            {
+                soru: "Kıpçakların Oğuzlar ve Ruslar ile yaptıkları mücadelelerin sırasıyla geçtiği eserler",
+                cevap: "Dede Korkut Hikayeleri - Igor Destanı"
+            },
+            {
+                soru: "kıpçaklarda Codex Cumanicus adlı sözlüğün yazıldığı diller",
+                cevap: "Türkçe, Farsça, Latince"
+            },
+            {
+                soru: "Altınorda Devleti'nin Türkleşmesinde etkili olan devlet",
+                cevap: "Kıpçaklar"
+            },
+            {
+                soru: "Dilleri ve dinleri ile Romenleri etkileyen devlet",
+                cevap: "Kıpçaklar"
+            },
+            {
+                soru: "Eyyübi ve Memlük ordusunda görev yapan devlet",
+                cevap: "Kıpçaklar"
+            },
+            {
+                soru: "Orta Asya'da Türk adı ile kurulan ilk devlet",
+                cevap: "I. Göktürkler"
+            },
+            {
+                soru: "I. Göktürk Devleti'nin kurucusu",
+                cevap: "Bumin Kağan"
+            },
+            {
+                soru: "Bumin Kağan'ın ünvanı",
+                cevap: "İl Kağan"
+            },
+            {
+                soru: "I. Göktürkler İpek Yolu'na hakim olabilmek için Sasaniler ile anlaşıp son verdiği devlet",
+                cevap: "Akhunlar"
+            },
+            {
+                soru: "Orta Asya'dan elçi gönderen ilk devlet",
+                cevap: "I. Göktürkler"
+            },
+            {
+                soru: "I. Göktürk elçisinin adı",
+                cevap: "Maniech"
+            },
+            {
+                soru: "Bizans'ın elçisinin adı",
+                cevap: "Zemarkhos"
+            },
+            {
+                soru: "I. Göktürk Devleti'nde Budizm'e girmesi ile halkıyla arası açılan hükümdar",
+                cevap: "Tapo Kağan"
+            },
+            {
+                soru: "I. Göktürklerde 50 sene Çin esareti altında kalan Türklerin önce ve sonra çıkardığı milli istilali ayaklanmalar",
+                cevap: "Kürşat - Nişufu"
+            },
+            {
+                soru: "Kutlukların diğer adı",
+                cevap: "II. Göktürk"
+            },
+            {
+                soru: "Kutlukların kurucusu",
+                cevap: "Kutluk Kağan"
+            },
+            {
+                soru: "Kultukların merkezi",
+                cevap: "Ötüken"
+            },
+            {
+                soru: "Kutluk Kağan'ın aldığı ünvan",
+                cevap: "İlteriş"
+            },
+            {
+                soru: "Kutluklarda Vezir Tonyukuk'a verilen ünvan",
+                cevap: "Türklerin Bismarc'ı - Apa Tarkan"
+            },
+            {
+                soru: "Karluk, Basmil ve Uygur saldırıları sonucu yıkılan devlet",
+                cevap: "Kutluklar"
+            },
+            {
+                soru: "Kelime anlamı akraba, müttefik, şahin gibi dolaşan, hücum eden, Dokuz Oğuzlar olarak bilinen devlet",
+                cevap: "Uygurlar"
+            },
+            {
+                soru: "Uygurların kurucusu",
+                cevap: "Kutluk Bilge Kül Kağan"
+            },
+            {
+                soru: "Uygurlarda Maniheizm'in kabul edildiği zaman",
+                cevap: "Bögü Kağan Zamanı"
+            },
+            {
+                soru: "Uygurlarda resim yapana ve duvar resmine verilen ad",
+                cevap: "Bedizci - Fresko"
+            },
+            {
+                soru: "Çin'den harf hareketli matbaa getiren devlet",
+                cevap: "Uygurlar"
+            },
+            {
+                soru: "İlk defa kütüphaneler kuran,<br>ilk kez örgün eğitim yapan,<br>Türk Tiyatrosu'nun temelini atan,<br>ilk defa minyatür sanatı kullanan,<br>ilk defa kağıt para kullanan,<br>Türk bankacılık temelini atan devlet",
+                cevap: "Uygurlar"
+            },
+            {
+                soru: "Uygurlarda kağıt paraya verilen isim",
+                cevap: "Çav"
+            },
+            {
+                soru: "Uygurları yıkan devlet",
+                cevap: "Kırgızlar"
+            },
+            {
+                soru: "Kırgızların merkezi",
+                cevap: "Ötüken"
+            },
+            {
+                soru: "Cengiz Han'a itaat eden ilk Türk devleti",
+                cevap: "Kırgızlar"
+            },
+            {
+                soru: "Manas Destanı ve Yenisey Kitabelerini oluşturan devlet",
+                cevap: "Kırgızlar"
+            },
+            {
+                soru: "Milletlerarası ilk yarışma düzenleyen devlet",
+                cevap: "Kırgızlar"
+            },
+            {
+                soru: "İslamiyeti kabul eden ilk Türk boyu",
+                cevap: "Karluklar"
+            },
+            {
+                soru: "Cengiz Han'a itaat eden ilk Türk boyu",
+                cevap: "Karluklar"
+            },
+            {
+                soru: "Karahanlıların kurulmasında etkili olan boy",
+                cevap: "Karluklar"
+            },
+            {
+                soru: "Karlukların Hükümdarlarına verdiği ünvan",
+                cevap: "Ata Sagun"
+            },
+            {
+                soru: "Türgişlerin en bilinen hükümdarı",
+                cevap: "Baga Tarkan"
+            },
+            {
+                soru: "İlk kez kendi adına para bastıran hükümdar",
+                cevap: "Baga Tarkan"
+            },
+            {
+                soru: "Türgişlerde Emevilerin Orta Asya'da ilerlemesini bir süre engelleyen hükümdar",
+                cevap: "Sulu Kağan"
+            },
+            {
+                soru: "Sasanilerde çıkan Mazdek İsyanı'nın bastırılmasında önemli rol oynayan devlet",
+                cevap: "Akhunlar"
+            },
+            {
+                soru: "Akhunların diğer adı",
+                cevap: "Eftalitler"
+            },
+            {
+                soru: "Büyük Selçuklu, Anadolu Selçuklu ve Osmanlı Devleti'ni kuran devlet",
+                cevap: "Oğuzlar"
+            },
+            {
+                soru: "Göktürk Devleti'nin egemenliği altında yaşayan devlet",
+                cevap: "Kimenler"
+            }, {
+                soru: "Gök Tanrı'nın bir hükümdara ve onun ailesine devlet yönetme yetkisi verdiğine inanılan anlayış",
+                cevap: "Kut"
+            },
+            {
+                soru: "Güneş'in doğduğu yerden battığı yere kadar olan coğrafyayı Türk hükümdarların idare etmesi",
+                cevap: "Türk Cihan Hakimiyeti"
+            },
+            {
+                soru: "Tarih adına dünya nizamını sağlama ve Türk adaletini dünyanın her yerine yayma",
+                cevap: "Nizam'ı Alem"
+            },
+            {
+                soru: "Her zaman değişen ve hedefe varıldığında tekrardan yeni bir hedef koyma ülküsü",
+                cevap: "Kızıl Elma"
+            },
+            {
+                soru: "İkili Teşkilatın merkezi",
+                cevap: "Doğu"
+            },
+            {
+                soru: "İkili Teşkilatta doğuyu yöneten",
+                cevap: "Kağan"
+            },
+            {
+                soru: "İkili Teşkilatta batıyı yöneten",
+                cevap: "Yabgu"
+            },
+            {
+                soru: "İkili teşkilatın uygulandığı ilk devlet",
+                cevap: "Asya Hun Devleti"
+            },
+            {
+                soru: "İslamiyet Öncesi'nde Devlet Görevlilerinde Apa",
+                cevap: "Sivil Görevli"
+            },
+            {
+                soru: "İslamiyet Öncesi'nde Devlet Görevlilerinde Aygucı",
+                cevap: "Vezir"
+            },
+            {
+                soru: "İslamiyet Öncesi'nde Devlet Görevlilerinde Ayuki",
+                cevap: "Hükümet"
+            },
+            {
+                soru: "İslamiyet Öncesi'nde Devlet Görevlilerinde Ağılığ",
+                cevap: "Hazine Görevlisi"
+            },
+            {
+                soru: "İslamiyet Öncesi'nde Devlet Görevlilerinde Otacı",
+                cevap: "Hekim / Tabip"
+            },
+            {
+                soru: "İslamiyet Öncesi'nde Devlet Görevlilerinde Buyruk",
+                cevap: "Bakan"
+            },
+            {
+                soru: "İslamiyet Öncesi'nde Devlet Görevlilerinde Tudun",
+                cevap: "Vergi Memuru"
+            },
+            {
+                soru: "İslamiyet Öncesi'nde Devlet Görevlilerinde Tutuk",
+                cevap: "Askeri Vali"
+            },
+            {
+                soru: "İslamiyet Öncesi'nde Devlet Görevlilerinde Erkin",
+                cevap: "Oğuzlarda Hükümdar"
+            },
+            {
+                soru: "İslamiyet Öncesi'nde Devlet Görevlilerinde Nazır",
+                cevap: "Bakan"
+            },
+            {
+                soru: "İslamiyet Öncesi'nde Devlet Görevlilerinde Bitikçi (Tamgacı)",
+                cevap: "Yazıcı ve Mühürdar"
+            },
+            {
+                soru: "İslamiyet Öncesi'nde Devlet Görevlilerinde Yarlığ",
+                cevap: "Hakanın Emri"
+            },
+            {
+                soru: "İslamiyet Öncesi'nde Devlet Görevlilerinde Tigin",
+                cevap: "Hükümdarın Oğlu"
+            },
+            {
+                soru: "İslamiyet Öncesi'nde Devlet Görevlilerinde İnanç / İnal / Ataman",
+                cevap: "Tigin Eğitmeni"
+            },
+            {
+                soru: "İslamiyet Öncesi'nde Devlet Görevlilerinde Şad",
+                cevap: "Hanedan Üyesi Komutan"
+            },
+            {
+                soru: "Kurultay'da Tabgaçlar",
+                cevap: "Nazırlar Meclisi"
+            },
+            {
+                soru: "Kurultay'da Hazar Devleti",
+                cevap: "İhtiyarlar Meclisi"
+            },
+            {
+                soru: "Kurultay'da Peçenekler",
+                cevap: "Komenton"
+            },
+            {
+                soru: "Kurultay'da Tuna Bulgarları",
+                cevap: "Millet Meclisi"
+            },
+            {
+                soru: "Kurultay'da Avrupa Hunları",
+                cevap: "Seçkinler Meclisi"
+            },
+            {
+                soru: "Sosyal Hayatta Toplumsal Sıralama",
+                cevap: "Oguş - Urug - Boy - Budun - İl"
+            },
+            {
+                soru: "Törelerin Değişmez 4 kuralı",
+                cevap: "Adalet (Könilik) - Uzluk (İyiik) - Tüzlük (Eşitlik) - İnsanlık (Kişilik)"
+            },
+            {
+                soru: "Devlet ile vatandaşın karşılıklı görevlerini bildiren yazısız sözleşme",
+                cevap: "Tüz"
+            },
+            {
+                soru: "İslamiyet öncesinde düşmanın durumunu öğrenmek amacıyla gönderilen keşif birliğine verilen ad",
+                cevap: "Yelme"
+            },
+            {
+                soru: "Türklerde Ordu Komutanı'na verilen ad",
+                cevap: "Tarkan"
+            },
+            {
+                soru: "Türklerde Kağan Muhafızlarına verilen ad",
+                cevap: "Böri"
+            },
+            {
+                soru: "Türklerde kullanılan savaş taktilkeri",
+                cevap: "Hilal - Turan - Sahte Ricat - Kurt Kapanı - Pusu"
+            },
+            {
+                soru: "İslamiyet öncesinde inanılan dinler",
+                cevap: "Gök Tanrı, Maniheizm, İslamiyet, Musevilik, Budizm, Hristiyanlık"
+            },
+            {
+                soru: "İslamiyet öncesinde inanılan inanışlar",
+                cevap: "Atalar Kültü, Yer - Su - Gök İnancı, Doğalar Kültü, Totemizm"
+            },
+            {
+                soru: "Türklerde karalarda Yarmak cinsi",
+                cevap: "Madeni"
+            },
+            {
+                soru: "Türklerde karalarda Kamdu - Kumpoyu - Böz cinsi",
+                cevap: "Bez"
+            },
+            {
+                soru: "Türklerde karalarda Çav cinsi",
+                cevap: "Kağıt"
+            },
+            {
+                soru: "Türklerde karalarda Satir cinsi",
+                cevap: "Gümüş"
+            },
+            {
+                soru: "Türklerin kullandığı ilk alfabe",
+                cevap: "Güktürk"
+            },
+            {
+                soru: "Türklerin kullandığı milli alfabeler",
+                cevap: "Göktürk - Uygur"
+            },
+            {
+                soru: "Türklerin bilinen en eski kitabesi",
+                cevap: "Yenisey"
+            },
+            {
+                soru: "Göktürklere ait en eski kitabe",
+                cevap: "Bugut Yazıtları"
+            },
+            {
+                soru: "Vezir Tonyukuk, Kül Tigin ve Bilge Kağan adına dikilen eser",
+                cevap: "Orhun Abideleri"
+            },
+            {
+                soru: "İlk Türk tarihçisi",
+                cevap: "Vezir Tonyukuk"
+            }
+        ];
+
+        var unite2 = [{
+                unite: "İlk Türk-İslam Devletleri",
+                soru: "Talas Savaşı'nın diğer adı",
+                cevap: "Atlık Savaşı"
+            },
+            {
+                soru: "Talas Savaşı'nda Çin ve Abbasiler arasındaki savaşta Abbasilerin kazanmasını sağlayan devlet",
+                cevap: "Karluklar"
+            },
+            {
+                soru: "Talas Savaşı'nda sanat eserleri Batı'ya taşınan devlet",
+                cevap: "Uygurlar"
+            },
+            {
+                soru: "Talas Savaşı sonrasında Buhara'ya verilen ünvan",
+                cevap: "İslamın Roma'sı"
+            },
+            {
+                soru: "Talas Savaşı sonrasında Kaşgar'a verilen ünvan",
+                cevap: "Kaşi yani Işıldayan İnci"
+            },
+            {
+                soru: "Emevilerin Arap olmayan ikinci sınıf vatandaş gibi görme politikası",
+                cevap: "Mevali"
+            },
+            {
+                soru: "Karahanlıların diğer adı",
+                cevap: "Afrasiyapoğulları"
+            },
+            {
+                soru: "Orta Asya'da kurulan ilk Müslüman Türk devleti",
+                cevap: "Karahanlılar"
+            },
+            {
+                soru: "Karahanlıların merkezi",
+                cevap: "Balasagun"
+            },
+            {
+                soru: "Karahanlıların kurucusu",
+                cevap: "Bilge Kül Kadır Han"
+            },
+            {
+                soru: "Karahanlılarda bulunan Türk boylar",
+                cevap: "Karluk - Yağma - Çiğil - Tuhsi"
+            },
+            {
+                soru: "Karahanlılarda İslamiyet'in kabul edildiği zaman",
+                cevap: "Satuk Buğra Han"
+            },
+            {
+                soru: "Karahanlılarda Satuk Buğra Han'ın ismi ve ünvanları",
+                cevap: "Abdulkerim - El'Mücahit ve El'Gazi"
+            },
+            {
+                soru: "Karahanlılarda Türk-İslam Medreselerinin yapıldığı zaman",
+                cevap: "Tamgaç Buğra Han"
+            },
+            {
+                soru: "Karahanlılarda Türk-İslam Medreselerinin ismi",
+                cevap: "Semerkand"
+            },
+            {
+                soru: "Dünyada ilk burslu öğrencilik sistemini başlatan devlet",
+                cevap: "Karahanlılar"
+            },
+            {
+                soru: "Karahanlılarda kervansarayların adı",
+                cevap: "Ribat"
+            },
+            {
+                soru: "İslamiyet'i devletin resmi dini olarak kabul eden ilk büyük devlet",
+                cevap: "Karahanlılar"
+            },
+            {
+                soru: "Gaznelilerin diğer adı",
+                cevap: "Yeminiler"
+            },
+            {
+                soru: "Gaznelilerin kurucusu",
+                cevap: "Alp Tegin"
+            },
+            {
+                soru: "Gaznelilerin en önemli hükümdarı",
+                cevap: "Gazneli Mahmut"
+            },
+            {
+                soru: "Dünyada sultan ünvanını alan ilk hükümdar",
+                cevap: "Gazneli Mahmut"
+            },
+            {
+                soru: "Gazneli Mahmut'un Abbasileri Şii Büveyhoğulları baskısından kurtararak aldığı ünvanlar",
+                cevap: "Zamanın Yeganesi - Alemin Aslanı - Sultan"
+            },
+            {
+                soru: "Sumnat Seferi sonucunda Gazneli Mahmut'un aldığı ünvan",
+                cevap: "Put Kırıcı"
+            },
+            {
+                soru: "Gazneli Mahmut'ın Biruni için söylediği söz",
+                cevap: "Sarayımın en kıymetli hazinesi"
+            },
+            {
+                soru: "Seçluklular ile yaptıkları Nesa, Serahs ve Dandanakan savaşı ile yıkılan devlet",
+                cevap: "Gazneliler"
+            },
+            {
+                soru: "... sonucunda<br><br>Geniş bir coğrafyaya hükmetmeleri<br>Farklı etnik kökenden olan birçok milleti bir arada toplamaları<br>Ordusunun içinde farklı milletlerin bulunması ve bu yüzde sık sık ayaklanmalar çıkması etkili olmuştur",
+                cevap: "Gaznelilerin Yıkılması"
+            },
+            {
+                soru: "Gaznelilerin Hüsrev Melik'in esir düşüp yıkılmasına neden olan devlet",
+                cevap: "Gurlular"
+            },
+            {
+                soru: "1040 Dandanakan Savaşı sonucu kurulan devlet",
+                cevap: "Büyük Selçuklu Devleti"
+            },
+            {
+                soru: "Büyük Selçuklu Devleti'nin dili",
+                cevap: "Farsça (İran'da kurulduğu için)"
+            },
+            {
+                soru: "Büyük Selçuklu Devleti'nin kurucusu",
+                cevap: "Tuğrul Bey"
+            },
+            {
+                soru: "Tuğrul Bey'in Bağdat Seferi yaparak Şii Büveyhoğullarına son vererek aldığı ünvan",
+                cevap: "Doğu'nun ve Batı'nın Hükümdarı"
+            },
+            {
+                soru: "Sultan Alparslan'ın fethettiği Hristiyanlar için kutsal kabul edilen yer",
+                cevap: "Ani"
+            },
+            {
+                soru: "Sultan Alparslan'ın Ani'yi fethederek aldığı ünvan",
+                cevap: "Fetihlerin Babası"
+            },
+            {
+                soru: "... sonuçları<br><br>Anadolu'nun kapısı Türklere açıldı<br>Anadolu'da ilk Türk-İslam devletleri kuruldu<br>Bizans İmparatoru Romen Diyojen, Selçuklulara esir düştü<br>Haçlı Seferlerinin başlamasına neden oldu<br>Türklerin Batı'ya ilerleyişi hızlandı<br>Abbasi Halifesi, Sultan Alparslan'a İslam Ülkelerinin Sulranı ünvanını verdi",
+                cevap: "Malazgirt Savaşı'nın Sonuçları"
+            },
+            {
+                soru: "Büyük Selçuklu Devleti'nin en parlak dönemi",
+                cevap: "Sultan Melikşah"
+            },
+            {
+                soru: "... nedenleri<br><br>Hasan Sabbah'ın başlatmış olduğu Haşhaşilik Hareketi sonucunda Selçuklu devlet adamlarının öldürülmesi<br>Abbasilerin Selçuklular aleyhine gizli faaliyetlerde bulunması<br>Oğuzların devlete küsmesi ve isyan etmesi<br>Melikler arasında taht kavgalarının yaşanması<br>Melik ve atabeylerin bağımızlık çalışmaları<br>Karahitaylar ile yapılan Katvan Savaşı'nın kaybedilmesi<br>Sultan Sencer'in ölümü",
+                cevap: "Büük Selçuklu Devleti'nin yıkılma nedenleri"
+            },
+            {
+                soru: "Mısır'da kurulan ilk Türk-İslam Devleti",
+                cevap: "Tolunoğulları"
+            },
+            {
+                soru: "Tolunoğulları'nın kurucusu",
+                cevap: "Tolunoğlu Ahmet"
+            },
+            {
+                soru: "Tolunoğulları'nın en parlak zamanı",
+                cevap: "Humaraveyh"
+            },
+            {
+                soru: "Tolunoğulları'nın açtığı hastanenin adı",
+                cevap: "Maristan"
+            },
+            {
+                soru: "Tolunoğulları'na son veren devlet",
+                cevap: "Abbasiler"
+            },
+            {
+                soru: "Hicaz Bölgesi olarak bilinen Mekke ve Medine'ye sahip olan ilk devlet",
+                cevap: "İhşidler"
+            },
+            {
+                soru: "İhşidlerin diğer adı",
+                cevap: "Akşitler"
+            },
+            {
+                soru: "İhşidlerin kurucusu",
+                cevap: "Muhammed Bin Togaç"
+            },
+            {
+                soru: "İhşidlere son veren devlet",
+                cevap: "Fatimiler"
+            },
+            {
+                soru: "Mısır'da kurulmuş Orta Doğu, Hicaz, Yemen ve Kuzey Afrika'da hüküm sürmüş Müslüman Türk devleti",
+                cevap: "Eyyübiler"
+            },
+            {
+                soru: "Hıttin Savaşı'nda Haçlıları mağlup edip Kudüs'ü Haçlılardan geri alan devlet",
+                cevap: "Eyyübiler"
+            },
+            {
+                soru: "Memlüklerin diğer adı",
+                cevap: "Devlet-i Türkiyye"
+            },
+            {
+                soru: "Sultan Kutuz Zamanı'nda 1260 Ayn Calud ve Sultan I. Baybars 1277 Elbistan savaşlarıyla Moğolları dünya tarihinde ilk defa mağlup eden devlet",
+                cevap: "Memlükler"
+            },
+            {
+                soru: "1516 Mercidabık ve 1517 Ridaniye savaşları sonucu Osmanlı Devleti'ne yenilerek yıkılan devlet",
+                cevap: "Memlükler"
+            },
+            {
+                soru: "Yağıbasan Medreses'ini yapan beylik",
+                cevap: "Danişmentliler"
+            },
+            {
+                soru: "Sivas, Tokat, Malatya civarında kurulan beylik",
+                cevap: "Danişmentliler"
+            },
+            {
+                soru: "Erzurum ve çevresinde kurulan beylik",
+                cevap: "Saltuklar"
+            },
+            {
+                soru: "Kale Cami, Tepsi Minare, Üç Kümbetler, Mama Hatun Türbesi, Micingerd Kalesi'ni kuranlar",
+                cevap: "Saltuklar"
+            },
+            {
+                soru: "Divriği ve Erzincan çevresinde kurulan beylik",
+                cevap: "Mengücekler"
+            },
+            {
+                soru: "Mengücekler'de 1985 yılından itibaren UNESCO tarafından koruma altında olan yapı",
+                cevap: "Divriği Ulu Camii"
+            },
+            {
+                soru: "Erzincan Sarayı'nda bilime hizmet eden fizik ve tıp alimi",
+                cevap: "Muvafakkidun Abdüllatif"
+            },
+            {
+                soru: "Hasankeyf-Harpu-Mardin civarında üç şube olarak kurulan beylik",
+                cevap: "Artuklar"
+            },
+            {
+                soru: "Hasankeyf, Malabadi Köprüsü, Hatuniye Medresesi, Necmettin Külliyesi, Koçhisar Ulu Camii Semanın Medresesi'ni yapan beylik",
+                cevap: "Artuklar"
+            },
+            {
+                soru: "Mardin'de dokumacılığın geliştiğinden bahseden Ünlü Seyyah",
+                cevap: "Marco Polo"
+            },
+            {
+                soru: "Robotik ve Sibernetik Bilimi'nin kurucusu",
+                cevap: "El-Cezeri"
+            },
+            {
+                soru: "Anadolu'daki beyliklerde denizci olan beylik",
+                cevap: "Çaka Bey"
+            },
+            {
+                soru: "Akkoyunluların kurucusu",
+                cevap: "Uzun Hasan"
+            },
+            {
+                soru: "Kur'an-ı Kerim'i Türkçe'ye çeviren devlet",
+                cevap: "Akkoyunlular"
+            },
+            {
+                soru: "Akkoyunluların Osmanlı Devleti'ne karşı yenilerek yıkılma sürecine girdiği Savaş",
+                cevap: "Otlukbeli Savaşı"
+            },
+            {
+                soru: "Akkoyunlulara son veren devlet",
+                cevap: "Karakoyunlular"
+            },
+            {
+                soru: "Azerbaycan'ın Türkleşmesinde etkili olan devlet",
+                cevap: "Karakoyunlular"
+            },
+            {
+                soru: "İran'da kurulan Şii karakterli devlet",
+                cevap: "Safeviler"
+            },
+            {
+                soru: "Safevilein Osmanlı Devleti'ne yenilip yıkıldığı savaş",
+                cevap: "Çaldıran Savaşı"
+            },
+            {
+                soru: "Babür Şah'ın hayatını topladığı eser",
+                cevap: "Vekayi"
+            },
+            {
+                soru: "Cihan Şah eşi Mümtaz Sultan için yaptırdığı eser",
+                cevap: "Taç Mahal"
+            },
+            {
+                soru: "Cengiz Han'ın Harzemşahlara yaşattığı facia",
+                cevap: "Otrar Faciası"
+            },
+            {
+                soru: "Moğol İmparatorluğu'nun parçalanması ile kurulan devletler",
+                cevap: "Altınorda, Çağatay, İlhanlı, Kubilay"
+            },
+            {
+                soru: "İlk Müslüman Türk Devletlerinde bulunmayan ünvan",
+                cevap: "Kağan"
+            },
+            {
+                soru: "İlk Müslüman Türk Devletlerinde Alemdar",
+                cevap: "Bayrağı Taşıyan"
+            },
+            {
+                soru: "İlk Müslüman Türk devletlerinde Camedar",
+                cevap: "Hükümdarın kıyafetleri ile ilgilenir"
+            },
+            {
+                soru: "Divan-ı Saltanat'ın Karahanlılardaki karşılığı",
+                cevap: "Maclis-i Ali"
+            },
+            {
+                soru: "Gaznelilerde mali ve genel işlerden sorumlu olan kişi",
+                cevap: "Divan-ı Vezaret"
+            },
+            {
+                soru: "İlk Türk-İslam Devletlerinde Amid",
+                cevap: "Sivil Ynetici"
+            },
+            {
+                soru: "İlk Türk-İslam Devletlerinde Amil",
+                cevap: "Vergi Toplayan Görevli"
+            },
+            {
+                soru: "İlk Türk-İslam Devletlerinde Atabey",
+                cevap: "Melik Eğitmeni"
+            },
+            {
+                soru: "İlk Türk-İslam Devletlerinde Muhtesip",
+                cevap: "Belediye İşlerinden Sorumlu"
+            },
+            {
+                soru: "İlk Türk-İslam Devletlerinde davalara bakan kadıları atayan baş kadı",
+                cevap: "Kadi-ül Kudat"
+            },
+            {
+                soru: "İk Türk-İslam Devletlerinde Askeri davalara bakan",
+                cevap: "Kadıasker veya Kadıleşker"
+            },
+            {
+                soru: "Toprak Yönetimi'nde müslümanlara ait olan mülk topraklar",
+                cevap: "Öşri"
+            },
+            {
+                soru: "Toprak Yönetimi'nde gayrimüslimlere ait olan mülk topraklar",
+                cevap: "Haraci"
+            },
+            {
+                soru: "İkta sistemi ile yetişen askere sırası ile barış ve savaş zamanı verilen isim",
+                cevap: "Sipahi - Cebelü"
+            },
+            {
+                soru: "İlk Türk-İslam Devletlerinde imarethane",
+                cevap: "Yiyecek dağıtılan hayır kurumu"
+            },
+            {
+                soru: "İlk Türk-İslam Devletlerinde Kapan",
+                cevap: "Tek cins malın satıldığı yer"
+            },
+            {
+                soru: "İlk Türk-İslam Devletlerinde Bedesten",
+                cevap: "Her cins malın satıldığı yer"
+            },
+            {
+                soru: "İlk Türk-İslam Devletlerinde Kümbet",
+                cevap: "Çadr şeklindeki anıt mezar"
+            },
+            {
+                soru: "İlk Türk-İslam Devletlerinde Külliye",
+                cevap: "Cami etrafındaki toplu yapılar"
+            },
+            {
+                soru: "Hassa Ordusu'nun Osmanlı Devleti'ndeki karşılığı",
+                cevap: "Kapıkulu Ocağı"
+            },
+            {
+                soru: "Gulam Sistemi'nin ilk görüldüğü yer",
+                cevap: "Karahanlılar"
+            },
+            {
+                soru: "... eserleri<br><br>Arap Ata Türbesi<br>Ayşe Bibi Türbesi<br>Hazara Camii<br>Talhatan Baba Camii",
+                cevap: "Karahanlılar"
+            },
+            {
+                soru: "... eserleri<br><br>Zafer Kuleleri<br>Leşker-i Bazaar Camii<br>Ribat-ı Mahi<br>Sultan III. Mesut Minaresi",
+                cevap: "Gazneliler"
+            },
+            {
+                soru: "İlk büyük Türk Hattatı",
+                cevap: "Amasyalı Yakut"
+            },
+            {
+                soru: "Cezeri'nin yapmış olduğu mekanik tasarımların toplandığı eser",
+                cevap: "Otomoto"
+            },
+            // {
+            //     soru: "",
+            //     cevap: ""
+            // }
+        ];
+    </script>
+    <script>
+        function shuffle(unite) {
+            for (let i = 0; i < unite.length; i++) {
+                let random = Math.floor(Math.random() * unite.length);
+                temp = unite[random];
+                unite[random] = unite[i];
+                unite[i] = temp;
+            }
+            return unite;
+        }
+
+        let random = 1000;
+        let random2 = 1000;
+        let soru = 0;
+        let unite = "";
+
+        let cont = document.querySelectorAll(".container");
+
+        shuffle(unite1);
+        shuffle(unite2);
+
+        function degistir() {
+
+            var tarih = [unite1, unite2];
+            var secim = document.querySelector("#konu").value;
+
+            if (secim == unite) {
+                if (soru == tarih[secim].length - 1) {
+                    soru = 0;
+                } else {
+                    soru++;
+                }
+            } else {
+                soru = 0;
+            }
+            console.log(tarih[secim].length + " adet soru var...");
+            unite = secim;
+            cont[0].innerHTML = `
+        <div class="soru">${tarih[unite][soru].soru}</div>
+        <b><i><div class="cevap">${tarih[unite][soru].cevap}</div></i></b>
+        `;
+
+
+            // let soru = document.querySelector(".soru");
+            // let cevap = document.querySelector(".cevap");
+
+
+            // soru.innerHTML = tarih[unite][random].soru;
+            // cevap.innerHTML = tarih[unite][random].cevap;
+        }
+    </script>
+</body>
+
+</html>
