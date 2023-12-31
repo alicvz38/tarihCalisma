@@ -1,4 +1,5 @@
-var unite3 = [{
+var unite3 = [
+    {
         unite: "Osmanlı Devleti Kültür ve Medeniyeti",
         soru: "Osmanlı Devleti'nin diğer adları",
         cevap: "Gaziler, Devlet-i Aliyye, Ottoman, Osmanoğulları, Osmaniye, Atman"
@@ -28,7 +29,7 @@ var unite3 = [{
         cevap: "Fatih Sultan Mehmet"
     },
     {
-        soru: "Veraset değişikliklerinde ülke en büyük ve en akıllı erkek üye tarafından yönetilir diyen kişi",
+        soru: "Veraset değişikliklerinde ülke en büyük ve en akıllı erkek üye tarafından yönetilir diyen kişi (Ekber-Erşed)",
         cevap: "I. Ahmet"
     },
     {
@@ -77,42 +78,42 @@ var unite3 = [{
     },
     {
         soru: "Osmanlı Devleti yükselme döneminden yıkılışına kadar olan başkent",
-        cevap: "istanbul"
+        cevap: "İstanbul"
     },
     {
-        soru: "istanbul'un diğer adları",
-        cevap: "kostantiniyye - Konstantinopolis - İslambol - Asitane - Payitaht - Dersaadet"
+        soru: "İstanbul'un diğer adları",
+        cevap: "Kostantiniyye - Konstantinopolis - İslambol - Asitane - Payitaht - Dersaadet"
     },
     {
         soru: "İstanbul'daki görevlerde boğazlara bakan",
-        cevap: "kaptanıderya"
+        cevap: "Kaptanıderya"
     },
     {
-        soru: "istanbul'daki görevlilerden adalete bakan",
+        soru: "İstanbul'daki görevlilerden adalete bakan",
         cevap: "Taht Kadısı"
     },
     {
-        soru: "istanbul'daki görevlerde güvenlik",
+        soru: "İstanbul'daki görevlerde güvenlik",
         cevap: "Yeniçeri Ağası"
     },
     {
-        soru: "istanbul'daki görevlerde imar işlerine bakan",
+        soru: "İstanbul'daki görevlerde imar işlerine bakan",
         cevap: "Mimarbaşı"
     },
     {
-        soru: "istanbul'daki görevlerde belediye işlerine bakan",
+        soru: "İstanbul'daki görevlerde belediye işlerine bakan",
         cevap: "Şehremini"
     },
     {
-        soru: "istanbul'da genel işlerle sorumlu olan",
+        soru: "İstanbul'da genel işlerle sorumlu olan",
         cevap: "Sadrazam"
     },
     {
-        soru: "Bursa'da Orhan Bey zamanı açılan ilk saray",
+        soru: "Bursa'da Orhan Bey Zamanı açılan ilk saray",
         cevap: "Bey Sarayı"
     },
     {
-        soru: "Fatih Sultan Mehmet zamanında açılan Osmanlı Devleti'nin en uzun yönetim merkezli yapan saray",
+        soru: "Fatih Sultan Mehmet Zamanı'nda açılan Osmanlı Devleti'nin en uzun yönetim merkezli yapan saray",
         cevap: "Topkapı Sarayı"
     },
     {
@@ -132,11 +133,11 @@ var unite3 = [{
         cevap: "Babüssade"
     },
     {
-        soru: "Divan-ı Hümayun'da kuran",
+        soru: "Divan-ı Hümayun'u kuran",
         cevap: "Orhan Bey"
     },
     {
-        soru: "Divan-ı Hümayun'da kaldıran",
+        soru: "Divan-ı Hümayun'u kaldıran",
         cevap: "II. Mahmut"
     },
     {
@@ -145,7 +146,7 @@ var unite3 = [{
     },
     {
         soru: "Divan-ı Hümayun'da Fatih'ten sonra başkanlık yapan kişiler ",
-        cevap: "sadrazamlar"
+        cevap: "Sadrazamlar"
     },
     {
         soru: "Divan-ı Hümayun'da alınan kararlar",
@@ -199,16 +200,426 @@ var unite3 = [{
         soru: "Sayılar zamanla artan Divan Üyeleri",
         cevap: "Vezir - Kazasker - Defterdar"
     },
-    // {
-    //     soru: "",
-    //     cevap: ""
-    // },
-    // {
-    //     soru: "",
-    //     cevap: ""
-    // },
-    // {
-    //     soru: "",
-    //     cevap: ""
-    // }
+
+
+    {
+        soru: "Salyane'nin anlamı",
+        cevap: "Maaş"
+    },
+    {
+        soru: "Osmanlı'da devlet memurlarına yılda bir defa maaş verilen eyalet sistemi",
+        cevap: "Salyaneli"
+    },
+    {
+        soru: "Mekke, Medine, Taif, Hayber'in adlandırıldığı isim",
+        cevap: "Hicaz"
+    },
+    {
+        soru: "Müslümanların ve Müslüman-gayrimüslimlerin kendi aralarında davalara bakan",
+        cevap: "Şeri"
+    },
+    {
+        soru: "Fransız tüccarların davalarına bakan",
+        cevap: "Konsolosluk"
+    },
+    {
+        soru: "Gayrimüslimlerin aile ve miras hukuku ile ilgili davalara bakan",
+        cevap: "Cemaat"
+    },
+    {
+        soru: "Hukuk ikilikler ile kaldırılan tüm mahkemeler",
+        cevap: "Medeni kanun ile Osmanlı Devleti'ne ait tüm mahkemeler"
+    },
+    {
+        soru: "Osmanlı Devleti'nde ilk kadı",
+        cevap: "Dursun Fakih"
+    },
+    {
+        soru: "Kadıların evliliklerinin neden çift yapıldığını ve evliliklerden doğan çocukların mirasçılık durumlarının kaydedildiği defter",
+        cevap: "Tereke"
+    },
+    {
+        soru: "Kadılar Mahkemede bir karar vermeden önce o bölgenin ileri gelen ve sevilen kişiler tarafından başvurulan yer",
+        cevap: "Şuhudul Hal"
+    },
+    {
+        soru: "Osmanlı Devleti'nde düğün, şenlik, ziyafet ve benzeri konularda yazılan eserler",
+        cevap: "Surname"
+    },
+    {
+        soru: "Hakkaniyet çemberi sırası",
+        cevap: "Adalet - Kanun - Ordu - Servet - Millet - Devlet"
+    },
+    {
+        soru: "Osmanlı Devleti'nde malını vakıf için bağışlayan kişinin irade beyanı",
+        cevap: "Sıyga"
+    },
+    {
+        soru: "Osmanlı devleti'nde tiyatro",
+        cevap: "Darülbedayi"
+    },
+    {
+        soru: "Osmanlı devleti'nde konservatuar",
+        cevap: "Darülelhan"
+    },
+    {
+        soru: "Osmanlı yaralı ve hasta askerlere yardım cemiyeti",
+        cevap: "Hilal-i Ahmer"
+    },
+    {
+        soru: "Osmanlı Devleti'nde yönetici grupları",
+        cevap: "Seyfiye - İlmiye - Kalemiye"
+    },
+    {
+        soru: "Orhan Bey tarafından kurulan ilk ordu",
+        cevap: "Yaya ve Müsellem"
+    },
+    {
+        soru: "Osmanlı Devleti'nde ordunun bozulma zamanı",
+        cevap: "III. Murat"
+    },
+    {
+        soru: "Kapıkulu askerlerinin 3 ayda bir aldığı maaş",
+        cevap: "Ulufe"
+    },
+    {
+        soru: "Kapıkulu askerlerinin Taht değişikliğinde aldığı maaş",
+        cevap: "Cülus"
+    },
+    {
+        soru: "Yeniçerilerin sefere çıkmadan önce okudukları dua",
+        cevap: "Gülbank"
+    },
+    {
+        soru: "Kapıkulu Ocağı asker ihtiyacını önceleri Mevlana Rüstem'in önerisiyle karşılaştığı sistem",
+        cevap: "Pençik Sistemi ya da Devşirme Sistemi"
+    },
+    {
+        soru: "Osmanlı Devleti'nde acemi oğlanlar ocağından usta birliklerine geçmeye verilen isim",
+        cevap: "Bedergah veya Kapıya Çıkma"
+    },
+    {
+        soru: "Osmanlı Devleti tebaasından olan Hıristiyan ailelerinden devşirme sistemiyle alınan çocukları eğiterek bunların asker olmasını veya devletin en önemli kademelerinde yer almasını sağlamıştır. Bu sistemle yetişen kişiler devlet yönetiminde sadrazamlığa kadar yükselebiliyor. Bu sistemin adı",
+        cevap: "Kul Sistemi"
+    },
+    {
+        soru: "Osmanlı ordusunda ordunun en kalabalık kısmı",
+        cevap: "Eyalet Askerleri"
+    },
+    {
+        soru: "Eyalet askerlerinin geçimlerini sağladığı yer",
+        cevap: "Tımar"
+    },
+    {
+        soru: "Eyalet askerlerinde devletin aldığı ücretli asker",
+        cevap: "Sekban ve Saruca"
+    },
+    {
+        soru: "Tımar sisteminin kaldırılmasıyla kurulan birlik",
+        cevap: "Redif Birlikleri"
+    },
+    {
+        soru: "Toprak yönetiminde arazi çeşitleri",
+        cevap: "Mülk - Miri - Vakıf"
+    },
+    {
+        soru: "Müslümanlara ait mülk toprakları",
+        cevap: "Öşri"
+    },
+    {
+        soru: "Gayrimüslimlere ait mük toprakları",
+        cevap: "haracı"
+    },
+    {
+        soru: "Geliri padişahın annesi ve kızlarına ayrılan topraklar",
+        cevap: "Paşmaklık"
+    },
+    {
+        soru: "Geliri devlete yararlılık gösterenler ayrılan topraklar",
+        cevap: "Malikane"
+    },
+    {
+        soru: "Geliri sınır boylarında oturanlara ayrılan topraklar",
+        cevap: "Yurtluk"
+    },
+    {
+        soru: "Geliri doğrudan hazineye ayrılan topraklar",
+        cevap: "Mukataa"
+    },
+    {
+        soru: "Halkın ortaklaşa kullandığı topraklar",
+        cevap: "Metruk"
+    },
+    {
+        soru: "Saray adamlarına ve ilmiye sınıfından bazı yüksek rütbeli kişilere çalıştıkları süre içinde maaşlarına ek olarak verilen arazi",
+        cevap: "Arpalık"
+    },
+    {
+        soru: "Sıbyan Mektebi'nde okulun ilk günü yapılan tören",
+        cevap: "Amin Alayı"
+    },
+    {
+        soru: "Şehzadegan Mektebi'nde yapılan ilk ders",
+        cevap: "Bed-i Besmele"
+    },
+    {
+        soru: "Akademik kariyer basamakları",
+        cevap: "Softa - Danişmend - Muid - Mülazım - Müderris"
+    },
+    {
+        soru: "Orhan Bey Zamanı'da açılan ilk medrese",
+        cevap: "İznik Orhaniyesi"
+    },
+    {
+        soru: "Osmanlı Devleti'nden günümüze kadar gelen en eski medrese",
+        cevap: "Süleyman Paşa Medresesi"
+    },
+    {
+        soru: "Fatih Zamanı'nda günümüzün İslam enstitüsü ayrında açılan medreseler",
+        cevap: "Şahn-ı Seman Medreseleri"
+    },
+    {
+        soru: "Kanuni Zamanı'nda açılan medreseler",
+        cevap: "Süleymaniye Medreseleri"
+    },
+    {
+        soru: "Medreselerde başarısız öğrenciye verilen ceza",
+        cevap: "Taşraya Çıkma"
+    },
+    {
+        soru: "Öğrencinin doğduğu yere gidip halka ders anlatması",
+        cevap: "Cerre Çıkmak"
+    },
+    {
+        soru: "Osmanlı Devleti'nin ilk müderrisi",
+        cevap: "Davud-u Kayser"
+    },
+    {
+        soru: "Mikrobiyolojinin Babası olarak bilinen araştırmacı",
+        cevap: "Akşemseddin"
+    },
+    {
+        soru: "Türk Plastik Cerrahisinin Babası olarak bilinen araştırmacı",
+        cevap: "Sabuncu Şerafettin"
+    },
+    {
+        soru: "Miratül Memalik ve Kitab-ül Muhit adlı eserleri yazan",
+        cevap: "Seydi Ali Reis"
+    },
+    {
+        soru: "Osmanı Devleti'nin ilk rasathanesini kuran",
+        cevap: "Takiyüddin Mehmet"
+    },
+    {
+        soru: "Osmanlı Devleti'nde Seyahatnameyi yazan kişi",
+        cevap: "Evliya Çelebi"
+    },
+    {
+        soru: "Keşfü-z Zünun ve Cihannüma eserlerini yazan kişi",
+        cevap: "Katip Çelebi"
+    },
+    {
+        soru: "Fizika eserini Arapça'ya çeviren kişi",
+        cevap: "Yanyalı Esat Efendi"
+    },
+    {
+        soru: "Devletin gidişatı ile ilgili risalesini sunan",
+        cevap: "Koçi Bey"
+    },
+    {
+        soru: "İlk resmi Tarih yazan kişi",
+        cevap: "Naima"
+    },
+    {
+        soru: "Maifetname'yi yazan",
+        cevap: "Erzurumlu İbrahim Hakkı"
+    },
+    {
+        soru: "Kısas-ı Enbiya, Mecelle ve Tarihi Cevdet adında eserleri bulunan kişi",
+        cevap: "Ahmet Cevdet Paşa"
+    },
+    {
+        soru: "Halkın refahı ve mutluluğu için piyasalardan arzu edilen kalitede ve ucuz fiyata yeter Katar mal bulundurulması",
+        cevap: "İaşecilik"
+    },
+    {
+        soru: "Üretimin ne kadar ve nasıl olacağı malların topluma nasıl ulaştırılacağı gibi konuları ele alın arz talep dengesini ifade eden",
+        cevap: "Gelenekçilik"
+    },
+    {
+        soru: "Devletin gelirlerinin en üst düzeye giderlerin ise en alt düzeye indirilmesine çalışıldığı ekonomik anlayışı",
+        cevap: "Fiskalizim"
+    },
+    {
+        soru: "Avrupa'da gümüş ve altının zenginlik aracı sayıldığı ekonomik anlayış",
+        cevap: "Merkantilizm"
+    },
+    {
+        soru: "Eksik rekabet şartlarından dolayı devletin fiyatlara müdahale etmesi",
+        cevap: "Narh Sistemi"
+    },
+    {
+        soru: "Kervanlar arasında haberleşmeyi sağlayan teşkilat",
+        cevap: "Menzil Teşkilatı"
+    },
+    {
+        soru: "Osmanlı Devleti'nde iş yeri açma ruhsatı",
+        cevap: "Gedik Hakkı"
+    },
+    {
+        soru: "Osmanlı Devleti'nde malın kalitesini kontrol eden görevli",
+        cevap: "Ehli Hibre"
+    },
+    {
+        soru: "Küçükbaş hayvanlardan alınan vergi",
+        cevap: "Ağnam"
+    },
+    {
+        soru: "Olağanüstü hallerde alınan vergi",
+        cevap: "Avarız"
+    },
+    {
+        soru: "Muaccelle bedelinin alındığı vergi",
+        cevap: "İltizam"
+    },
+    {
+        soru: "Gayrimüslimlerin ödediği toprak vergisi",
+        cevap: "ispenç"
+    },
+    {
+        soru: "Boğazlardan geçen gemiler için alınan vergi",
+        cevap: "izni Sefine"
+    },
+    {
+        soru: "Klasik dönemde tüketiciyi korumaya yönelik Alınan tedbirler",
+        cevap: "Standardizasyon - Narh - Toptancı Halleri"
+    },
+    {
+        soru: "İlk açılan Osmanlı bankası",
+        cevap: "Bank-ı Dersaadet"
+    },
+    {
+        soru: "Osmanlı devletinin paralarını basmaya yetkili olan ingiliz bankacı",
+        cevap: "Bank-ı Osmani"
+    },
+    {
+        soru: "Çiftçiye ucuz kredi verebilmek için kurulan banka",
+        cevap: "Emekli Sandıkları ya da Ziraat Bankası"
+    },
+    {
+        soru: "Osmanlı Devleti'nin İznik'te yapılan ilk camisi",
+        cevap: "Hacı Özbek Camisi"
+    },
+    {
+        soru: "Mimar Sinan'ın yaptığı önemli camilerde sırasıyla çıraklık kalfalık ve ustalık eserleri",
+        cevap: "Şehzade Camii - Süleymaniye Camii - Selimiye Camii"
+    },
+    {
+        soru: "Osmanlı'da UNESCO tarafından koruma altına alınan cami",
+        cevap: "Selimiye Camii"
+    },
+    {
+        soru: "Sedefkar Mehmet Ağa tarafından yapılan Osmanlı Devleti'nin ilk 6 minareli camisi",
+        cevap: "Sultanahmet Camii"
+    },
+    {
+        soru: "Osmanlı Devleti'nin ilk batı tarzında yapılan cami",
+        cevap: "Nuruosmaniye Camii"
+    },
+    {
+        soru: "Bosna Hersek'te bulunan Mimar Sinan'ın öğrencisi Mimar Hayrettin'in yaptığı eser",
+        cevap: "Mostar Köprüsü"
+    },
+    {
+        soru: "En büyük Osmanlı hattatı ve ünvanı",
+        cevap: "Şeyh Hamdullah - Hattat-ı Kıbletül Hattatin"
+    },
+    {
+        soru: "Hatları günümüze ulaşan tek Osmanlı padişahı",
+        cevap: "II. Mustafa"
+    },
+    {
+        soru: "Nakkaş Sinan Bey'in portre görünümüne geçirilen eseri",
+        cevap: "Gül Koklayan Fatih"
+    },
+    {
+        soru: "Tezhip'in ünlü temsilcisi",
+        cevap: "Kara Mehmet"
+    },
+    {
+        soru: "Resmini yaptıran ilk Osmanlı padişahı",
+        cevap: "Fatih Sultan Mehmet"
+    },
+    {
+        soru: "Resmini devlet dairesinde astıran Osmanlı padişahı",
+        cevap: "II. Mahmut"
+    },
+    {
+        soru: "Osmanlı Devleti'nin ressam yetiştirebilmek için Paris'te açtığı kurum",
+        cevap: "Mekteb-i Osmanı"
+    },
+    {
+        soru: "İlk resim sergisini açan",
+        cevap: "Şeker Ahmet Paşa"
+    },
+    {
+        soru: "Kaplumbağa Terbiyecisi, Kur'an Okuyan Adam, Kur'an Okuyan Kız, Yeşil Cami Önü, Silah Tacirleri ve Sanayi Nefise Mektebi gibi tablolarıyla ünlenen ressam",
+        cevap: "Osman Hamdi Bey"
+    },
+    {
+        soru: "Osmanlı Devleti'nin ilk kadın ressamı",
+        cevap: "Mihri Müşfik"
+    },
+    {
+        soru: "Osmanlı tarihinde batı tarzında müzik dersi alan ilk padişah",
+        cevap: "Sultan Abdülmecid"
+    },
+    {
+        soru: "III. Selim'in bulduğu makam",
+        cevap: "Suzidilara"
+    },
+    {
+        soru: "Heykelini yaptıran tek Osmanlı padişahı",
+        cevap: "Sultan Abdülaziz"
+    },
+    {
+        soru: "Osmanlı Devleti'nde çiftçilikle uğraşan",
+        cevap: "Mücellit"
+    },
+    {
+        soru: "Yazılı dil ve edebiyatta Divan Edebiyatı",
+        cevap: "Baki - Fuzuli - Nabi"
+    },
+    {
+        soru: "Yazılı dil ve edebiyatta Tasavvuf Edebiyat",
+        cevap: "Pir Sultan Abdal - Akşemsettin - Eşrefoğlu Rumi - Hacı Bayram Veli - Kaygusuz Abdal - Ümmi Kemal"
+    },
+    {
+        soru: "yazılı dil ve edebiyatta Halk Edebiyatı",
+        cevap: "Köroğlu - Öksüz - Dadaloğlu"
+    },
+    {
+        soru: "I. Murat Zamanı'nda Edirne'de başlayan spor",
+        cevap: "Kırkpınar Yağlı Güreşleri"
+    },
+    {
+        soru: "Okçuluk ile uğraşanlar",
+        cevap: "Kemankeş"
+    },
+    {
+        soru: "Osmanlı devletinde hünerli at binicileri",
+        cevap: "Cündi"
+    },
+    {
+        soru: "İlk kez ders müfredatına giren beden eğitimi dersi",
+        cevap: "Jimnastik"
+    },
+    {
+        soru: "ilk beden eğitimi öğretmeni",
+        cevap: "Mehmet faik Üstünidman"
+    },
+    {
+        soru: "Osmanlı Milli Olimpiyat Komitesi'ni kuran",
+        cevap: "Selim Sırrı Tarcan"
+    }
 ];

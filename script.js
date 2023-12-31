@@ -8,9 +8,9 @@ var b = document.querySelector(".basaDon");
 
 var cont = document.querySelectorAll(".container");
 
-shuffle(unite1);
-shuffle(unite2);
-shuffle(unite3);
+// shuffle(unite1);
+// shuffle(unite2);
+// shuffle(unite3);
 
 function degistir() {
 
