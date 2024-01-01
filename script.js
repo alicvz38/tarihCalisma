@@ -1,9 +1,11 @@
 var soru = 0;
 var unite = "";
 var tarih = [unite1, unite2, unite3];
+var secim = "";
 opEkle(tarih);
 
-var d = document.querySelector(".degistir");
+var o = document.querySelector(".onceki");
+var s = document.querySelector(".sonraki");
 var b = document.querySelector(".basaDon");
 
 var cont = document.querySelectorAll(".container");
@@ -12,37 +14,46 @@ var cont = document.querySelectorAll(".container");
 // shuffle(unite2);
 // shuffle(unite3);
 
-function degistir() {
+function onceki() {
+    if (soru == 0) {
+        soru = tarih[secim].length - 1;
+    } else {
+        soru--;
+    }
+    cont[0].innerHTML = `
+    <div class="soru" style = "color: rgb(0,0,${soru/(tarih[secim].length - 1)*255})">${tarih[unite][soru].soru}</div>
+    <b><i><div class="cevap" style = "color: rgb(0,0,${soru/(tarih[secim].length - 1)*255})">${tarih[unite][soru].cevap}</div></i></b>
+        `;
+}
 
-    var secim = document.querySelector("#konu").value;
+function sonraki() {
+    if (soru == tarih[secim].length - 1) {
+        soru = 0;
+    } else {
+        soru++;
+    }
+    cont[0].innerHTML = `
+    <div class="soru" style = "color: rgb(0,0,${soru/(tarih[secim].length - 1)*255})">${tarih[unite][soru].soru}</div>
+    <b><i><div class="cevap" style = "color: rgb(0,0,${soru/(tarih[secim].length - 1)*255})">${tarih[unite][soru].cevap}</div></i></b>
+        `;
+}
+
+function basla() {
+    secim = document.querySelector("#konu").value;
+    soru = 0;
 
     if (secim === "Seçiniz") {
         alert("Lütfen Ünite Seçiniz");
     } else {
-        d.textContent = "Değiştir";
-        b.style.visibility = "Visible";
-        b.style.opacity = "1";
-        if (secim == unite) {
-            if (soru == tarih[secim].length - 1) {
-                soru = 0;
-            } else {
-                soru++;
-            }
-        } else {
-            soru = 0;
-        }
-        unite = secim;
-        cont[0].innerHTML = `
-            <div class="soru">${tarih[unite][soru].soru}</div>
-            <b><i><div class="cevap">${tarih[unite][soru].cevap}</div></i></b>
-            `;
-    }
-}
+        o.style.visibility = "Visible";
+        o.style.opacity = "1";
+        s.style.visibility = "Visible";
+        s.style.opacity = "1";
 
-function basaDon() {
-    soru = 0;
+    }
+    unite = secim;
     cont[0].innerHTML = `
-        <div class="soru">${tarih[unite][soru].soru}</div>
-        <b><i><div class="cevap">${tarih[unite][soru].cevap}</div></i></b>
+        <div class="soru" style = "color: rgb(0,0,${soru/(tarih[secim].length - 1)*255})">${tarih[unite][soru].soru}</div>
+        <b><i><div class="cevap" style = "color: rgb(0,0,${soru/(tarih[secim].length - 1)*255})">${tarih[unite][soru].cevap}</div></i></b>
         `;
 }

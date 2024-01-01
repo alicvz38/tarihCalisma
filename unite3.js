@@ -616,7 +616,7 @@ var unite3 = [
     },
     {
         soru: "ilk beden eğitimi öğretmeni",
-        cevap: "Mehmet faik Üstünidman"
+        cevap: "Mehmet Faik Üstünidman"
     },
     {
         soru: "Osmanlı Milli Olimpiyat Komitesi'ni kuran",
