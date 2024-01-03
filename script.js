@@ -1,6 +1,6 @@
 var soru = 0;
 var unite = "";
-var tarih = [unite1, unite2, unite3];
+var tarih = [unite1, unite2, unite3, unite4];
 var secim = "";
 opEkle(tarih);
 
@@ -9,10 +9,6 @@ var s = document.querySelector(".sonraki");
 var b = document.querySelector(".basaDon");
 
 var cont = document.querySelectorAll(".container");
-
-// shuffle(unite1);
-// shuffle(unite2);
-// shuffle(unite3);
 
 function onceki() {
     if (soru == 0) {
@@ -39,6 +35,10 @@ function sonraki() {
 }
 
 function basla() {
+    shuffle(unite1);
+    shuffle(unite2);
+    shuffle(unite3);
+    shuffle(unite4);
     secim = document.querySelector("#konu").value;
     soru = 0;
 

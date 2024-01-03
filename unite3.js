@@ -1,5 +1,4 @@
-var unite3 = [
-    {
+var unite3 = [{
         unite: "Osmanlı Devleti Kültür ve Medeniyeti",
         soru: "Osmanlı Devleti'nin diğer adları",
         cevap: "Gaziler, Devlet-i Aliyye, Ottoman, Osmanoğulları, Osmaniye, Atman"
@@ -621,5 +620,5 @@ var unite3 = [
     {
         soru: "Osmanlı Milli Olimpiyat Komitesi'ni kuran",
         cevap: "Selim Sırrı Tarcan"
-    }
+    },
 ];

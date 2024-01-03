@@ -10,7 +10,7 @@ function shuffle(unite) {
 
 function opEkle(tarih) {
     var sel = document.querySelector("#konu");
-    for(let i = 0; i < tarih.length; i++){
+    for (let i = 0; i < tarih.length; i++) {
         var opt = document.createElement("option");
         opt.value = i;
         opt.textContent = tarih[i][0].unite;
