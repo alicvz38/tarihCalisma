@@ -1,6 +1,6 @@
 var soru = 0;
 var unite = "";
-var tarih = [unite1, unite2, unite3, unite4];
+var tarih = [unite1, unite2, unite3, unite4,unite5];
 var secim = "";
 opEkle(tarih);
 

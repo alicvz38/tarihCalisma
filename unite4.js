@@ -1,5 +1,5 @@
 var unite4 = [{
-        unite: "Osmanlı Devleti Dönemleri",
+        unite: "Osmanlı Devleti Kuruluş Dönemi",
         soru: "Osmanlı Devleti'nde Yüzyıl başlarında Osmanlı Devletleri",
         cevap: "İlhanlılar - Altınorda - Memlükler - Türkiye Selçuklu Devletleri - Bizans - Trabzon Rum İmparatorluğu"
     },
@@ -150,9 +150,5 @@ var unite4 = [{
     {
         soru: "Osmanlı Devleti'nin Kurluş Dçnemi'nde Haçlılar ile yaptığı savaşlar",
         cevap: 'SIN<i style = "color: red">A</i>V II'
-    },
-    // {
-    //     soru: "",
-    //     cevap: ""
-    // }
+    }
 ];
