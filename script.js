@@ -39,6 +39,7 @@ function basla() {
     shuffle(unite2);
     shuffle(unite3);
     shuffle(unite4);
+    shuffle(unite5);
     secim = document.querySelector("#konu").value;
     soru = 0;
 

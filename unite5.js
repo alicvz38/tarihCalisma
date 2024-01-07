@@ -152,7 +152,7 @@ var unite5 = [{
         cevap: "Hint Denizi Savaşı"
     },
     {
-        soru: "1555 ilk defa imzalanan antlaşma",
+        soru: "1555 İran'da ilk defa imzalanan antlaşma",
         cevap: "Amasya Antlaşması"
     },
     {
