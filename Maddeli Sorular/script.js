@@ -40,9 +40,9 @@ function sonraki() {
 }
 
 function basla() {
-    for (let i = 0; i < tarih.length; i++) {
-        shuffle(tarih[i]);
-    }
+    // for (let i = 0; i < tarih.length; i++) {
+    //     shuffle(tarih[i]);
+    // }
     secim = document.querySelector("#konu").value;
     soru = 0;
 
