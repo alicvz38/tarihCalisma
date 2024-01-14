@@ -6,7 +6,7 @@ var unite2 = [{
                 <li>Müslümanları Bizan baskısından korumuş</li>
                 <li>İslamiyet'i Hindistan, Orta Asya, Anadolu, Avrupa ve Balkanlar'da yaymış</li>
                 <li>Önemli bilim insanları ve eserleri ortaya çıkmış</li>
-                <li>Haçlı Seferlinekarşı savaşmış</li>
+                <li>Haçlı Seferline karşı savaşmış</li>
                 <li>Türkçe ve Arapçayı yayarak bölgeleri Türk islamlaştırmıştır</li>
             </ol>
         `
@@ -18,7 +18,7 @@ var unite2 = [{
                 <li>Anadolu'nun kapısı Türklere açıldı</li>
                 <li>İlk Türk-İslam Beylikleri kuruldu</li>
                 <li>Romen Diyojen Selçuklulara esir düşürüldü</li>
-                <li>Türkleri tek başına yenemeyeceğini anlayan Bizans İmparatorluğu, Avrupa'dan yardım isteyerek Haçlı Seferlerini başlattı</li>
+                <li>Türkleri tek başına yenemeyeceğini anlayan Bizans İmparatorluğu, Avrupa'dan yardım isteyerek Haçlı Seferleri'ni başlattı</li>
                 <li>Türklerin Batı'ya ilerleyişi hızlandı</li>
                 <li>Sultan Alparslan'a İslam Ülkelerinin Sultanı ünvanı verildi</li>
             </ol>
@@ -75,7 +75,7 @@ var unite2 = [{
                 <li>Vergiler %1'e düşürüldü</li>
                 <li>Harzemşahlar ile yapılan Yassıçemen Savaşı kazanıldı</li>
                 <li>İlk dini nitelikli ayaklanma olan Baba İshak İsyanı çıktı</li>
-                <li>Kösedah Savaşı İlhanlılara karşı kaybedildi</li>
+                <li>Kösedağ Savaşı İlhanlılara karşı kaybedildi</li>
             </ol>
         `
     },

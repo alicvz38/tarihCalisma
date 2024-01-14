@@ -30,7 +30,7 @@ select {
 
 .cont {
     width: 80%;
-    height: 65vh;
+    height: 55vh;
     font-size: 20px;
     box-shadow: 0 0 500px #555;
     border-radius: 25px;
@@ -85,8 +85,8 @@ ol{
 }
 li{
     max-width: 100%;
-    margin: 15px auto;
-    font-size: 20px;
+    margin: 5px auto;
+    font-size: 16px;
     list-style-type: upper-roman;
     text-align: left
 }

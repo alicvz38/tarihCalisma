@@ -50,7 +50,7 @@ var unite1 = [{
         `
     },
     {
-        soru: "Uygurların Maniheizm Dini'ni kabul ettikten sonra yaptığı yenilikler",
+        soru: "Uygurların Maniheizm Dini'ni Kabul Ettikten Sonra Yaptığı Yenilikler",
         cevap: `
             <ol>
                 <li>Hayvansal gıdaların yenmesini yasaklanması ile savaşçılık özelliklerini yitirdiler</li>
