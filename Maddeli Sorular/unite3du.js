@@ -99,17 +99,5 @@ var unite3du = [{
         <li>Baskı ve şiddet yoluyla benimsetilmek istendi</li>
     </ol>
     `
-    },
-    {
-        soru: "XVIII. Yüzyıl Islahatları",
-        cevap: `
-    <ol>
-        <li>Batı Avrupa örnek alındı</li>
-        <li>Baskı ve şiddet yoluyla benimsetmek istendi</li>
-        <li>XVII. yüzyıla göre daha kalıcı oldu</li>
-        <li>Hukuk hariç her alanda ıslahat yapıldı</li>
-        <li>Saray, ulema ve asker yapılan bu ısrarlara karşı çıktı</li>
-    </ol>
-    `
     }
 ];

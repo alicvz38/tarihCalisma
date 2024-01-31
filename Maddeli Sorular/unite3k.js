@@ -18,6 +18,16 @@ var unite3k = [
         `
     },
     {
+        soru:"İstanbul Kuşatmaları'nda Başarısız Olmasında Etkili Durumlar",
+        cevap:`
+        <ol>
+            <li>Karamanoğulları'nın iki kez isyan etmesi</li>
+            <li>Haçlılar ile Niğbolu Savaşı'nın yapılması</li>
+            <li>Timur'un Sivas'ı işgal edip Ankara'ya doğru ilerlemesi</li>
+        </ol>
+        `
+    },
+    {
         soru:"Ankara Savaşı'nın Nedenleri",
         cevap:`
         <ol>

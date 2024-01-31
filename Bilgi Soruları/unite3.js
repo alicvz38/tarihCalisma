@@ -184,8 +184,12 @@ var unite3 = [{
         cevap: "Nişancı"
     },
     {
+        soru: "İlk derya beyi",
+        cevap: "Karamürsel Apl"
+    },
+    {
         soru: "ilk Kaptanıderya",
-        cevap: "Karamürsel Alp"
+        cevap: "Saruca Paşa"
     },
     {
         soru: "Divana üye olan ilk Kaptanıderya",
@@ -304,11 +308,19 @@ var unite3 = [{
         cevap: "Seyfiye - İlmiye - Kalemiye"
     },
     {
+        soru: "İlmiye sınıfında buluannlar",
+        cevap: "Şeyhülislan - Kazasker - Kadı - Müderris - Muid"
+    },
+    {
+        soru: "Kalemiye sınıfında bulunanlar",
+        cevap: "Nişancı - Defterdar - Reisü-l Küttab - Katipler"
+    },
+    {
         soru: "Orhan Bey tarafından kurulan ilk ordu",
         cevap: "Yaya ve Müsellem"
     },
     {
-        soru: "Osmanlı Devleti'nde ordunun bozulma zamanı",
+        soru: "Osmanlı Devleti'nde Yaya e Müsellem Ordusu'nun bozulma zamanı",
         cevap: "III. Murat"
     },
     {
@@ -325,7 +337,7 @@ var unite3 = [{
     },
     {
         soru: "Kapıkulu Ocağı asker ihtiyacını önceleri Mevlana Rüstem'in önerisiyle karşılaştığı sistem",
-        cevap: "Pençik Sistemi ya da Devşirme Sistemi"
+        cevap: "Pençik Sistemi sonrasında Devşirme Sistemi"
     },
     {
         soru: "Osmanlı Devleti'nde acemi oğlanlar ocağından usta birliklerine geçmeye verilen isim",
@@ -388,6 +400,18 @@ var unite3 = [{
         cevap: "Arpalık"
     },
     {
+        soru:"Padişah ve divan üyelerine ayrılan topraklar",
+        cevap:"Has"
+    },
+    {
+        soru:"Müderris, tabip ve muidlere ayrlıan topraklar",
+        cevap:"Zeamet"
+    },
+    {
+        soru:"Memurlar ve askerlere ayrılan topraklar",
+        cevap:"Tımar"
+    },
+    {
         soru: "Sıbyan Mektebi'nde okulun ilk günü yapılan tören",
         cevap: "Amin Alayı"
     },
@@ -409,7 +433,7 @@ var unite3 = [{
     },
     {
         soru: "Fatih Zamanı'nda günümüzün İslam enstitüsü ayrında açılan medreseler",
-        cevap: "Şahn-ı Seman Medreseleri"
+        cevap: "Sahn-ı Seman Medreseleri"
     },
     {
         soru: "Kanuni Zamanı'nda açılan medreseler",

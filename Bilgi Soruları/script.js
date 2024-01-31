@@ -1,13 +1,15 @@
 var soru = 0;
 var unite = "";
-var tarih = [unite1, unite1k, unite2, unite2k, unite3, unite3k, unite3y];
+var tarih = [unite1, unite1k, unite2, unite2k, unite3, unite3k, unite3y, unite3du, unite3g, unite3da];
 var secim = "";
 opEkle(tarih);
 var adet = 0;
 
-for(let i = 0; i < tarih.length; i++){
+for (let i = 0; i < tarih.length; i++) {
     adet += tarih[i].length;
+    console.log(tarih[i][0].unite + "\n" + tarih[i].length + " soru var.\n\n");
 }
+console.log("Toplamda " + adet + " adet soru var.");
 
 var o = document.querySelector(".onceki");
 var s = document.querySelector(".sonraki");
@@ -53,7 +55,6 @@ function basla() {
         o.style.opacity = "1";
         s.style.visibility = "Visible";
         s.style.opacity = "1";
-
     }
     unite = secim;
     cont[0].innerHTML = `

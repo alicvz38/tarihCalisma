@@ -13,6 +13,31 @@ var unite3y = [{
         `
     },
     {
+        soru: "Fetih İçin Osmanlı Devleti'nin Yaptığı Hazırlıklar",
+        cevap: `
+        <ol>
+            <li>Venedik, Eflak gibi prenslikler ile antlaşma yapıldı</li>
+            <li>400 parçalık donanma hazırlandı</li>
+            <li>Mancınık ve hareketli kuleler inşa edildi</li>
+            <li>Sadrazamlık Antlaşmaları imzalandı</li>
+            <li>Boğazkesen yapıldı</li>
+        </ol>
+        `
+    },
+    {
+        soru: "Bizans İmparatorluğu'nun Fetih İçin Aldığı Önlemler",
+        cevap: `
+        <ol>
+            <li>Grejuva ateşi çoğaltıldı</li>
+            <li>Halk silahlandırıldı</li>
+            <li>Haliç'e zincir çekildi</li>
+            <li>Avrupa'dan yardım istendi</li>
+            <li>İstanbul surları güçlendi</li>
+            <li>Katolik ve Ortodoks kiliseleri birleştirildi</li>
+        </ol>
+        `
+    },
+    {
         soru: "istanbul'un Fethi'nin Sonuçları",
         cevap: `
         <ol>
@@ -28,6 +53,23 @@ var unite3y = [{
             <li>Topların surları yıkabileceğinin anlaşılmasıyla feodalite zayıflamaya Başladı</li>
             <li>İstanbul'dan kaçan bilim insanları italya'ya giderek Rönesans'ın başlamasına neden oldu</li>
             <li>İstanbul bir bilim merkezi haline geldi</li>
+        </ol>
+        `
+    },
+    {
+        soru: "Fatih Zamanı Diğer Geşilmeler",
+        cevap: `
+        <ol>
+            <li>Topkapı Sarayı yapıldı</li>
+            <li>Ayasofya Kilisesi, Fetih Camisi'ne dönüştürüldü</li>
+            <li>İlk altın para basıldı</li>
+            <li>İlk iltizam sistemi uygulandı</li>
+            <li>İlk müsadere uygulandı</li>
+            <li>Cülus yasalaştı</li>
+            <li>Divana nişancı atandı</li>
+            <li>Sadrazamlar divana başkanlık etmeye başladı</li>
+            <li>Örfi hukuk kuralları yazılı hale getirildi</li>
+            <li>Sahn-ı Seman Medreseleri ile Tetimmen Medreseleri açıldı</li>
         </ol>
         `
     },

@@ -1,5 +1,36 @@
 var unite3 = [{
         unite: "Osmanlı Devleti Kültür ve Medeniyeti",
+        soru: "Klasik Dönem Kültür Medeniyetinin Oluşmasında Etkili Olanlar",
+        cevap: `
+            <ol>
+                <li>Orta Asya Türk gelenekleri</li>
+                <li>İslam'ın getirdiği esaslar</li>
+                <li>Fethedilen bölgelerdeki kültürel esaslar</li>
+            </ol>
+    `
+    }, 
+    {
+        soru: "Osmanlı Devleti'nin Hukuk Sistemini Oluşturmasında Etkili Olan Durumlar",
+        cevap: `
+            <ol>
+                <li>Fethedilen bölgelerdeki uygulamalar</li>
+                <li>İslam'ın getirdiği esaslar</li>
+                <li>Orta Asya Türk gelenekleri</li>
+            </ol>
+    `
+    },
+    {
+        soru: "Kadıların Görevleri",
+        cevap: `
+            <ol>
+                <li>Adli, idari ve belediye işlerine bakar</li>
+                <li>Miras, boşanma, noterlik ve vakıf işlerini yapar</li>
+                <li>Atandığı yerde iki yıl görev yapar</li>
+                <li>Esnaf ve loncaları denetler, fiyat kontrolü yapar</li>
+            </ol>
+    `
+    },
+    {
         soru: "Medreselerin Bozulma Nedenleri",
         cevap: `
         <ol>

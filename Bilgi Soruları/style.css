@@ -88,5 +88,6 @@ li{
     margin: 15px auto;
     font-size: 20px;
     list-style-type: upper-roman;
-    text-align: left
+    text-align: left;
+    transition: 250ms
 }

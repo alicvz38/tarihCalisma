@@ -1,13 +1,15 @@
 var soru = 0;
 var unite = "";
-var tarih = [unite1, unite2, unite3, unite3k, unite3y, unite3du];
+var tarih = [unite1, unite2, unite3, unite3k, unite3y, unite3du, unite3g];
 var secim = "";
 opEkle(tarih);
 var adet = 0;
 
 for (let i = 0; i < tarih.length; i++) {
     adet += tarih[i].length;
+    console.log(tarih[i][0].unite + "\n" + tarih[i].length + " soru var.\n\n");
 }
+console.log("Toplamda " + adet + " adet soru var.");
 
 var o = document.querySelector(".onceki");
 var s = document.querySelector(".sonraki");

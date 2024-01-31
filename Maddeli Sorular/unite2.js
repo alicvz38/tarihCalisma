@@ -1,5 +1,16 @@
 var unite2 = [{
         unite: "İlk Türk-İslam Devletleri",
+        soru: "Talas Savaşı'nın Maddeleri",
+        cevap: `
+            <ol>
+                <li>Diğer adı Atlık Savaşı'dır</li>
+                <li>Çin ile Abbasiler arasındaki savaşı Karluklar yardımı ile Abbasiler kazanmıştır</li>
+                <li>Abbasilerin hoşgörüsünden etkilenen Karluklar topluca İslamiyet'e geçmişlerdir</li>
+                <li>Uygurların yaptığı sanat eserleri Batı'ya taşınmıştır</li>
+            </ol>
+        `
+    },
+    {
         soru: "Türkler İslamiyet'i Kitleler Halinde Kabul Ettikten Sonra",
         cevap: `
             <ol>
@@ -35,6 +46,16 @@ var unite2 = [{
                 <li>Melik ve atabeylerin bağımsızlık çalışmaları</li>
                 <li>Karahitaylar ile yapılan Katvan Savaşı'nı kaybedilmesi</li>
                 <li>Sultan Sencer'in ölümü</li>
+            </ol>
+        `
+    },
+    {
+        soru: "İlk Türk-İslam Hukuku'nun Oluşumunda Etkili Olan Durumlar",
+        cevap: `
+            <ol>
+                <li>İslamın getirdiği esaslar</li>
+                <li>Oğuzların kabile gelenekleri</li>
+                <li>Köktürk, Uygur, Sasani ve Akhun gelenekleri</li>
             </ol>
         `
     },

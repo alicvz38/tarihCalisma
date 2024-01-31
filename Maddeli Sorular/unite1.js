@@ -74,5 +74,29 @@ var unite1 = [{
                 <li>Sosyal devlet anlayışını göstermek</li>
             </ol>
         `
+    },
+    {
+        soru: "İslamiyet Öncesi Türk Devletleri'nde Kurultay",
+        cevap: `
+            <ol>
+                <li>Günümüzün bakanlar kuruludur</li>
+                <li>Sadece danışma meclisi değildir</li>
+                <li>Kağan olmadığı zaman Kurultaya Aygucı başkanlık eder</li>
+                <li>Din hariç her türlü meseleler konuşulur</li>
+                <li>Hakanın isteği ile töreleri değiştirir</li>
+                <li>Törelere uymayan hakanı görevden alır ve yeni hakanı seçer</li>
+                <li>Katılan tüm üyelere Toygun denir, üyeleri hakan, hatun, boy beyleri, ileri gelenler, komutanlar ve hanedan üyeleridir</li>
+            </ol>
+        `
+    },
+    {
+        soru: "Törenin oluşumunda etkili olunan durumlar",
+        cevap: `
+            <ol>
+                <li>Kut anlayışı ile Hakanlar tarafından konulan yasalar</li>
+                <li>Kurultayda alınan kararlar</li>
+                <li>Gelene ve görenekler</li>
+            </ol>
+        `
     }
 ];

@@ -56,6 +56,14 @@ var unite3y = [{
         cevap: "II. Bayezit"
     },
     {
+        soru: "Karamanoğulları'na son veren",
+        cevap: "II. Bayezit"
+    },
+    {
+        soru: "Antalya ve dolaylarında Şah Kulu İsyanı'nın çıktığı zaman",
+        cevap: "II. Bayezit"
+    },
+    {
         soru: "Yükselme Dönemi'nin içinde Duraklama Dönemi'nin yaşandığı zaman",
         cevap: "II. Bayezit"
     },
@@ -104,11 +112,11 @@ var unite3y = [{
         cevap: "Kanuni Sultan Süleyman"
     },
     {
-        soru: "1521 Belgrat'ın alındığı zaman",
+        soru: "Belgrat'ın alınması ile Orta Avrupa fetihleri için bir üs elde edildiği zaman",
         cevap: "Kanuni Sultan Süleyman"
     },
     {
-        soru: "1522 Rodos Adası'nın Saint Jean Şövalyeleri'nden alındığı zaman",
+        soru: "Rodos Adası'nın Saint Jean Şövalyeleri'nden alındığı zaman",
         cevap: "Kanuni Sultan Süleyman"
     },
     {
@@ -116,7 +124,7 @@ var unite3y = [{
         cevap: "Mohaç Meydan Muharebesi"
     },
     {
-        soru: "1533 Avusturya Kralı ile Osmanlı Devleti arasında İstanbul Antlaşması'nın imzalandığı zaman",
+        soru: "Avusturya Kralı ile Osmanlı Devleti arasında İstanbul Antlaşması'nın imzalandığı zaman",
         cevap: "Kanuni Sultan Süleyman"
     },
     {
@@ -124,19 +132,15 @@ var unite3y = [{
         cevap: "Kanuni Sultan Süleyman"
     },
     {
-        soru: "1538 Haçlılar ile yapılan savaş",
+        soru: "Haçlılar ile yapılan savaş Anadolu'nun bir Türk gölü haline geldiği savaş",
         cevap: "Preveze Deniz Savaşı"
     },
     {
-        soru: "Kanuni Sultan Süleyman Zamanı'nda 1538 - 1553 yılalrı arasındaki yapılan savaş",
-        cevap: "Hint Denizi Savaşı"
-    },
-    {
-        soru: "1555 İran'da ilk defa imzalanan antlaşma",
+        soru: "İran'da ilk defa imzalanan antlaşma",
         cevap: "Amasya Antlaşması"
     },
     {
-        soru: "1560 Haçlılar ile Kuzey Afrika egemenliğini pekiştiren savaş",
+        soru: "Haçlılar ile Kuzey Afrika egemenliğini pekiştiren savaş",
         cevap: "Cerbe Deniz Savaşı"
     },
     {
@@ -144,7 +148,7 @@ var unite3y = [{
         cevap: "Turgut Ali Reis"
     },
     {
-        soru: "1566 Sakız Adası alınıp yapılan sefer",
+        soru: "Sakız Adası alınıp yapılan sefer",
         cevap: "Zigetvar Seferi"
     },
     {
@@ -162,6 +166,10 @@ var unite3y = [{
     {
         soru: "Biz Kıbrıs'ı almakla sizin elinizi kestik, siz İnebahtı'nda bizi yenmekle, sakalımızı traş ettiniz. Kesilen kolun yerine yenisi gelmez ama kesilen sakal daha gür çıkar, diyen kişi",
         cevap: "Sokullu Mehmet Paşa"
+    },
+    {
+        soru: "Ordunun başında sefere çıkma geleneğini terk eden ve İstanbul'da ölen ilk Osmanlı padişahı",
+        cevap: "II. Selim"
     },
     {
         soru: "Osmanlı Devleti'nin tarihinde yıkılan 4 donanma",

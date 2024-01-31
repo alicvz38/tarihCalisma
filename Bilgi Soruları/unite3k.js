@@ -4,6 +4,26 @@ var unite3k = [{
         cevap: "İlhanlılar - Altınorda - Memlükler - Türkiye Selçuklu Devletleri - Bizans - Trabzon Rum İmparatorluğu"
     },
     {
+        soru: "İran'da kurulan, Harzemşahlar'a son veren, Kösedağ Savaşı ile Anadolu Selçuklu Devleti'ni mağlup eden, Gazan Han Zamanı'nda İlsamiyet'i kabul eden, Hem Batiniliğe hem de Abbasilere son veren devlet",
+        cevap: "İlhanlılar"
+    },
+    {
+        soru: "Batu Han tarafından kurulan, Timur saldırıları sonucunda parçalanarak hanlklara ayrılan devlet",
+        cevap: "Altın Orda"
+    },
+    {
+        soru: "Aybey tarafından Mısır'da kurulan, Baharat Yolu ile zenginleşen, Ridaniye Savaşı sonucu yıkılan devlet",
+        cevap: "Memlükler"
+    },
+    {
+        soru: "İznik'te kurulan, Kösedağ Savaşı'yla İlhanlılara tabi olan, Sultan III. Mesut'un ölümü ile yıkıloan devlet",
+        cevap: "Türkiye Selçuklu Devleti"
+    },
+    {
+        soru: "Fatih Sultan Mehmet tarafından sona erdirilen devlet",
+        cevap: "Trabzon Rum İmparatorluğu"
+    },
+    {
         soru: "Osmanlı Devleti'nde İngiltere ile Fransa arasında yaşanan savaş",
         cevap: "Yüzyıl Savaşı"
     },
@@ -28,7 +48,7 @@ var unite3k = [{
         cevap: "Fahrüddin"
     },
     {
-        soru: "Karacahisar, Yundhisar. Yenişehir ve İnegöl'ü alan",
+        soru: "Karacahisar, Yundhisar, Yenişehir ve İnegöl'ü alan",
         cevap: "Osman Bey"
     },
     {
@@ -60,6 +80,10 @@ var unite3k = [{
         cevap: "Orhan Bey"
     },
     {
+        soru: "Tekirdağ, Çorlu ve Malkara'nın alındığı zaman",
+        cevap: "Orhan Bey"
+    },
+    {
         soru: "Gelibolu Fatihi",
         cevap: "Süleyman Paşa"
     },
@@ -68,12 +92,16 @@ var unite3k = [{
         cevap: "Türkmen Hükümdarlarının En Ulusu"
     },
     {
-        soru: "Osmanlı-Haçlı Savaşı olan Sırpsındığı Savaşının kazanıldığı zaman",
+        soru: "Osmanlı-Haçlı Savaşı olan Sırpsındığı Savaşı'nın kazanıldığı zaman",
         cevap: "I. Murat"
     },
     {
         soru: "I. Murat Zamanı'nda Sırpların mağlup edildiği yer",
         cevap: "Çirmen"
+    },
+    {
+        soru: "Osmanlı öncü birliğinin bozguna uğradığı yer",
+        cevap: "Poşnik"
     },
     {
         soru: "I. Murat Zamanı'nda ilk defa büyük bir haçlı ordusuna karşı kazanılan savaş",
@@ -96,6 +124,10 @@ var unite3k = [{
         cevap: "I. Murat"
     },
     {
+        soru: "Manastır merkezli Rmeli Beylerbeyliği'nin kurulduğu zaman",
+        cevap: "I. Murat"
+    },
+    {
         soru: "Yıldırım Bayezit'in Yıldırım ünvanını kazandığı savaş",
         cevap: "Frenkyazısı Savaşı"
     },
@@ -110,6 +142,10 @@ var unite3k = [{
     {
         soru: "Niğbolu Savaşı sonunda Yıldırım Bayezit'e verilen ünvan",
         cevap: "Sultan-ı İklimi Rum"
+    },
+    {
+        soru: "Niğbolu Savaşı ganimetleri ile yapılan cami",
+        cevap: "Bursa Ulu Camii"
     },
     {
         soru: "Fetret Devri'ni sona erdirdiği için Osmanlı Devleti'nin 2. kurucusu olarak bilinen",
