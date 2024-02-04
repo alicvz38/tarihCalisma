@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coğrafya Çalışması</title>
+    <link rel="shortcut icon" href="tarih.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <a href="../" class="btn btn-outline-success border-3 px-4 py-2" style="font-size: 24px;">Geri</a>
+    <select name="" id="konu">
+        <option value="Seçiniz">********** Seçiniz **********</option>
+    </select>
+
+    <div class="cont">
+        <div class="soru">
+
+        </div>
+        <b>
+            <i>
+                <div class="cevap">
+
+                </div>
+            </i>
+        </b>
+    </div>
+
+    <div class="btns">
+        <div class="btn btn-outline-primary px-3 py-3 basaDon" href="#" onclick="basla()">
+            Başla
+        </div>
+        <div class="btn btn-outline-danger px-3 py-3 sonraki" href="#"
+            style="opacity: 0; visibility: hidden;transition: 250ms linear" onclick="onceki()">
+            Önceki
+        </div>
+        <div class="btn btn-outline-success px-3 py-3 onceki" href="#"
+            style="opacity: 0; visibility: hidden;transition: 250ms linear" onclick="sonraki()">
+            Sonraki
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+    </script>
+    <script src="sinir.js"></script>
+    <script src="masif.js"></script>
+    <script src="kivrimDaglar.js"></script>
+    <script src="kirikDaglar.js"></script>
+    <script src="volkanikDaglar.js"></script>
+    <script src="platolar.js"></script>
+    <script src="functions.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
